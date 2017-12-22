@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    {% block title %}{% endblock %}
+    </title>
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+<!-- Font -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Sweet Alert 2 -->
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/sweetalert2.css' %}"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.min.js" integrity="sha256-NBMm26+MVgnPpBR/jdmM0orRevP7j26HoHC3IPW/T+k=" crossorigin="anonymous"></script>
+
+<!-- Loading CSS files -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+
+</head>
+<body>
+
+{% block header %}
+{% endblock %}
+
+{% block nav %}
+{% endblock %}
+
+{% block mainContent %}
+{% endblock %}
+
+{% block script %}
+{% endblock %}
+
+</body>
+</html>

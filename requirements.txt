@@ -1,0 +1,12 @@
+certifi
+chardet
+Django
+docopt
+idna
+pipreqs
+pytz
+yarg
+urllib3
+requests
+gunicorn
+bs4

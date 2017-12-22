@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+
+<title>Su borcu</title>
+</head>
+
+{% block body %}
+<body>
+
+	<!-- Header Section -->
+
+	<header>
+		<p id="p">Abonent kodu ilə su borcunun öyrənilməsi</p>
+	</header>
+
+	<!-- Navigation bar -->
+
+	<nav>
+		<a href="{% url 'index' %}">Ana səhifə</a>
+		<a href="{% url 'index' %}">Su borcu</a>
+		<a href="{% url 'imei' %}">IMEI kodunun yoxlanılması</a>
+		<a onclick="s()">Haqqımızda</a>
+		<a onclick="s()">Əlaqə</a>
+	</nav>
+
+		<!-- Main section. Form and output -->
+
+		<div class="g-l">
+			<div class="form">
+				<h3>Abonent kodunuzu yazaraq su borcunuzu öyrənin.</h3>
+				<form action="/waterdebt" method="post">
+				{% csrf_token %}
+					<input id="abk" type="number" name="abkodu" placeholder="Abonent kodu">
+					<button id="submit" type="submit">Borcu öyrən</button>
+				</form>
+			</div>
+
+			<!-- Output -->
+
+			<div class="data">
+				<p>{{ code }}</p>
+				<p>{{ name }} </p>
+				<p>{{ debt }}</p>
+			</div>
+
+			<p id="str">{{ error }}</p>
+		</div>
+
+	<!-- Our sweet alert :) -->
+
+	<script>
+		function s(){
+			swal('Oops',
+			    'Təəssüf ki hələ hazır deyil',
+			    'error');
+		};
+	</script>
+
+	<!-- Still haven't figured out how to do -->
+
+	<!--<script>
+		$(document).ready(function(){
+			$("#submit").click(function(){
+				$(".data")
+				.animate({top: '400px;'})
+				.animate({height: '+=100px'})
+				.animate({width: '+=100px'})
+				.css("background-color", "darkcyan")
+				.html("<p>Abonent kodu: " + c + "</p>")
+				.html("<p>Ad: " + n + "</p>")
+				.html("<p>Borc: " + d + "</p>")
+				.delay(5000);
+			});
+		});
+	</script> 
+
+	<footer>
+		<p>Powered By Kənan.</p>
+		<p>All rights reserved.</p>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-google"></a>
+	</footer> -->
+
+</body>
+
+{% endblock %}
+</html>

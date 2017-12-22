@@ -1,0 +1,1 @@
+web: gunicorn namelessProject.wsgi --log-file -

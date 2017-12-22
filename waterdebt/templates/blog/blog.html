@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %} Blog {% endblock %}
+
+{% block header %}
+	<!-- Header Section -->
+
+	<header>
+		<p id="p">Our first blog</p>
+	</header>
+
+{% endblock %}
+
+{% block nav %}
+	<!-- Navigation bar -->
+
+	<nav>
+		<a href="{% url 'index' %}">Ana səhifə</a>
+		<a href="{% url 'index' %}">Su borcu</a>
+		<a href="{% url 'imei' %}">IMEI kodunun yoxlanılması</a>
+		<a onclick="s()">Haqqımızda</a>
+		<a onclick="s()">Əlaqə</a>
+	</nav>
+
+{% endblock %}
+
+{% block mainContent %}
+    <div class="all-content">
+        <section>
+            <article>
+                <h1>{{ post.title }}</h1>
+                <img class="briefContentImage" src="{{ post.image }}">
+                <p class="briefContent">{{ post.briefContent }}</p>
+            </article>
+            <article>
+                <h1>{{ post.title }}</h1>
+                <img class="briefContentImage" src="{{ post.image }}">
+                <p class="briefContent">{{ post.briefContent }}</p>
+            </article>
+        </section>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+	<!-- Our sweet alert :) -->
+
+	<script>
+		function s(){
+			swal('Oops',
+			    'Təəssüf ki hələ hazır deyil',
+			    'error');
+		};
+	</script>
+
+{% endblock %}

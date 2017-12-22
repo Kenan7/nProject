@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+
+<title>IMEI Info</title>
+</head>
+
+{% block body %}
+<body>
+
+	<!-- Header Section -->
+
+	<header>
+		<p id="p">IMEI kodunun qeydiyyatdan keçib keçmədiyini öyrənin.</p>
+	</header>
+
+	<!-- Navigation bar -->
+
+	<nav>
+		<a href="{% url 'index' %}">Ana səhifə</a>
+		<a href="{% url 'index' %}">Su borcu</a>
+		<a href="{% url 'imei' %}">IMEI kodunun yoxlanılması</a>
+		<a onclick="s()">Haqqımızda</a>
+		<a onclick="s()">Əlaqə</a>
+	</nav>
+
+		<!-- Main section. Form and output -->
+	
+		<div class="g-l">
+			<div class="form">
+				<h3>IMEI kodunuzu telefonda *#06# yazaraq öyrənə bilərsiniz.</h3>
+				<form action="/imei" method="post">
+				{% csrf_token %}
+					<input id="abk" type="number" name="imei" placeholder="IMEI kodu">
+					<button id="submit" type="submit">Submit</button>
+				</form>
+			</div>
+
+			<!-- Output -->
+
+				<p id="str">{{ d }}</p>
+
+			<p id="str">{{ error }}</p>
+		</div>
+
+	<!-- Our sweet alert :) -->
+
+	<script>
+		function s(){
+			swal('Oops',
+			    'Təəssüf ki hələ hazır deyil',
+			    'error');
+		};
+	</script>
+
+</body>
+
+{% endblock %}
+</html>

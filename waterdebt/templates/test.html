@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+
+{% block header %}
+	<!-- Header Section -->
+
+	<header>
+		<p id="p">Abonent kodu ilə su borcunun öyrənilməsi</p>
+	</header>
+
+{% endblock %}
+
+{% block nav %}
+	<!-- Navigation bar -->
+
+	<nav>
+		<a href="{% url 'index' %}">Ana səhifə</a>
+		<a href="{% url 'index' %}">Su borcu</a>
+		<a href="{% url 'imei' %}">IMEI kodunun yoxlanılması</a>
+		<a onclick="s()">Haqqımızda</a>
+		<a onclick="s()">Əlaqə</a>
+	</nav>
+
+{% endblock %}
+
+{% block mainContent %}
+
+    <div class="whole">
+
+        <div class="firstDiv">
+            <div class="header"><p id="h-p">Su borcu</div>
+
+            <div class="form">
+                <h3>Abunə kodunuzu yazaraq su borcunu öyrənin</h3>
+                <form action="/waterdebt" method="post">
+                    {% csrf_token %}
+                    <input type="number" name="abkodu" id="abk" placeholder="Abonent kodunuz">
+                    <button id="submit" type="submit">Borcu öyrən</button>
+                </form>
+            </div>
+
+            <div class="data">
+                <p>{{ code }}</p>
+                <p>{{ name }}</p>
+                <p>{{ debt }}</p>
+
+                <p id="str">{{ error }}</p>
+            </div>
+        </div>
+
+        <div class="firstDiv">
+            <div class="header"><p id="h-p">IMEI kodunun doğruluğunu yoxlayın</p></div>
+			<div class="form">
+				<h3>IMEI kodunuzu telefonda *#06# yazaraq öyrənə bilərsiniz.</h3>
+				<form action="/imei" method="post">
+				{% csrf_token %}
+					<input id="abk" type="number" name="imei" placeholder="IMEI kodu">
+					<button id="submit" type="submit">Submit</button>
+				</form>
+			</div>
+
+			<!-- Output -->
+
+			<p id="str">{{ d }}</p>
+
+			<p id="str">{{ error }}</p>
+		</div>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+	<!-- Our sweet alert :) -->
+
+	<script>
+		function s(){
+			swal('Oops',
+			    'Təəssüf ki hələ hazır deyil',
+			    'error');
+		};
+	</script>
+
+	<!-- Still haven't figured out how to do -->
+
+	<!--<script>
+		$(document).ready(function(){
+			$("#submit").click(function(){
+				$(".data")
+				.animate({top: '400px;'})
+				.animate({height: '+=100px'})
+				.animate({width: '+=100px'})
+				.css("background-color", "darkcyan")
+				.html("<p>Abonent kodu: " + c + "</p>")
+				.html("<p>Ad: " + n + "</p>")
+				.html("<p>Borc: " + d + "</p>")
+				.delay(5000);
+			});
+		});
+	</script>
+
+	<footer>
+		<p>Powered By Kənan.</p>
+		<p>All rights reserved.</p>
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-google"></a>
+	</footer> -->
+
+{% endblock %}
