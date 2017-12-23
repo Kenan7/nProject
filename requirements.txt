@@ -9,4 +9,4 @@ yarg
 urllib3
 requests
 gunicorn
-bs4
+beautifulsoup4

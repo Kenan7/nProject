@@ -168,13 +168,18 @@ a { cursor: pointer; }
 }
 
 .briefContentImage {
-	float: left;
-	width: 70px;
-	height: 70px;
+    float: left;
+	width: 60px;
+	height: auto;
+}
+
+.details {
+    width: calc(100% - 60px);
+    padding-left: 50px;
 }
 
 article {
 	border: 1px solid darkcyan;
-	padding: 30px;
+	padding: 15px 15px;
 	margin: 20px;
 }

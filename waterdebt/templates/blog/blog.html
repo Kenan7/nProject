@@ -26,18 +26,17 @@
 
 {% block mainContent %}
     <div class="all-content">
+    {% for post in posts  %}
         <section>
             <article>
-                <h1>{{ post.title }}</h1>
                 <img class="briefContentImage" src="{{ post.image }}">
-                <p class="briefContent">{{ post.briefContent }}</p>
-            </article>
-            <article>
-                <h1>{{ post.title }}</h1>
-                <img class="briefContentImage" src="{{ post.image }}">
-                <p class="briefContent">{{ post.briefContent }}</p>
+                <div class="details">
+                    <h1>{{ post.title }}</h1>
+                    <p class="briefContent">{{ post.briefContent }}</p>
+                </div>
             </article>
         </section>
+    {% endfor %}
     </div>
 
 {% endblock %}

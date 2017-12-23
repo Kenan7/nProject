@@ -64,8 +64,8 @@ def imei(request):
 		return render(request, "test.html", c)
 
 def entry(request):
-	post = Post.objects.all()[:10]
+	posts = Post.objects.all()[:10]
 	context = {
-		'post': post
+		'posts': posts
 	}
 	return render(request, blog, context)
