@@ -27,8 +27,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/namelessProject/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="99" selection-end-column="1" />
+            <state relative-caret-position="461">
+              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,20 +160,20 @@
             <path>
               <item name="namelessProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="namelessProject" type="462c0819:PsiDirectoryNode" />
-              <item name="namelessProject" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="namelessProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="namelessProject" type="462c0819:PsiDirectoryNode" />
-              <item name="namelessProject" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="waterdebt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="namelessProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="namelessProject" type="462c0819:PsiDirectoryNode" />
               <item name="waterdebt" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="namelessProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="namelessProject" type="462c0819:PsiDirectoryNode" />
+              <item name="waterdebt" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="namelessProject" type="b2602c69:ProjectViewProjectNode" />
@@ -196,8 +196,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Guillermo\Desktop\namelessProject\namelessProject" />
       <recent name="C:\Users\Guillermo\Desktop\namelessProject\waterdebt" />
+      <recent name="C:\Users\Guillermo\Desktop\namelessProject\namelessProject" />
       <recent name="C:\Users\Guillermo\Desktop\namelessProject" />
     </key>
   </component>
@@ -314,7 +314,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/namelessProject/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/waterdebt/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2924">
           <caret line="172" column="17" lean-forward="false" selection-start-line="172" selection-start-column="17" selection-end-line="172" selection-end-column="17" />
@@ -364,7 +364,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/namelessProject/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/waterdebt/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2924">
           <caret line="172" column="17" lean-forward="false" selection-start-line="172" selection-start-column="17" selection-end-line="172" selection-end-column="17" />
@@ -414,7 +414,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/namelessProject/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/waterdebt/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2924">
           <caret line="172" column="17" lean-forward="false" selection-start-line="172" selection-start-column="17" selection-end-line="172" selection-end-column="17" />
@@ -456,7 +456,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/namelessProject/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/waterdebt/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2924">
           <caret line="172" column="17" lean-forward="false" selection-start-line="172" selection-start-column="17" selection-end-line="172" selection-end-column="17" />
@@ -567,7 +567,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/namelessProject/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/waterdebt/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2926">
           <caret line="154" column="17" lean-forward="true" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
@@ -603,7 +603,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/namelessProject/static/css/sweetalert2.css">
+    <entry file="file://$PROJECT_DIR$/waterdebt/static/css/sweetalert2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -639,7 +639,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/namelessProject/static/css/style.css">
+    <entry file="file://$PROJECT_DIR$/waterdebt/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="182" column="23" lean-forward="false" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
@@ -707,8 +707,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/namelessProject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="99" selection-end-column="1" />
+        <state relative-caret-position="461">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
           <folding />
         </state>
       </provider>
