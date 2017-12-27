@@ -4,7 +4,6 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '+kv)berxg%7wef$n60gqs+^@uz2^o842t!c()5hp&td=%+cvdu'
 
@@ -93,8 +92,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, '../waterdebt/static'),
+    os.path.join(BASE_DIR, 'static'),
 ]

@@ -1,9 +1,8 @@
 certifi
 chardet
-Django
+Django==2.0
 docopt
 idna
-pipreqs
 pytz
 yarg
 urllib3
