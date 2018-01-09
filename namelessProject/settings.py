@@ -10,7 +10,7 @@ SECRET_KEY = '+kv)berxg%7wef$n60gqs+^@uz2^o842t!c()5hp&td=%+cvdu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['35.195.8.27']
 
 # Application definition
 
@@ -92,7 +92,13 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 STATIC_URL = '/static/'
 
+PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
