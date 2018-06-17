@@ -21,13 +21,13 @@ def waterdebt(request):
 	abkodu = request.POST.get('abkodu')
 
 	if abkodu:
-		api = "http://data.e-gov.az/api/v1/IEGOVService.svc/GetDebtByAbonentCode/{}".format(abkodu)
+		api = "https://opendata.e-gov.az/api/v1/json/azersu/DebtInfo/{}".format(abkodu)
 
 
 	data = requests.get(api)
 
 	d_d = json.loads(data.text)
-	b_d = d_d['response']['htmlField']
+	b_d = d_d['Response']['HtmlField']
 	soup = b(b_d, 'html.parser')
 
 	if len(soup.find_all('b')) == 0:
